@@ -1,0 +1,144 @@
+<HTML>
+<HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text-html;charset=UTF-8">
+   <TITLE> Diagnostic and Configuration </TITLE>
+   <LINK REL="STYLESHEET" HREF="mystyles.css" TYPE="text/css">
+   
+</HEAD>
+<BODY BGCOLOR="000000" TEXT="ffffff">
+
+<H2>Streaming<!-- Streaming --></H2>
+<P>
+<BR>
+
+<applet code="PageCtrl.class" archive="PageCtrl.zip" name="PageCtrl" width=10 height=10 >   
+<param name="background" value="000000">
+<param name="type" value="2">    
+</applet>
+
+<H3>Start streaming towards: <!-- Attivazione streaming verso: -->
+<BR>
+<applet code="Streaming.class" archive="Streaming.zip" name="Streaming" width=500 height=25 >   
+<param name="background" value="000000">
+<param name="language" value="2">    
+</applet>
+</H3>
+
+<H3>Audio and Video streams sent from the system<!-- Gli streams live audio e video inviati dal sistema --> <SPAN CLASS="textyellow">COMPANYNAME</SPAN>,
+are available in this page using the player<!-- vengono caricati automaticamente all'interno di questa pagina utilizzando il player --> 
+<A HREF="http://www.apple.com/quicktime/download/"> Quicktime (V.6.0 or higher) </A>
+<H3>
+ATTENTION: camera movement operations are visible with a few seconds of delay for the initially data buffering made by the player.<!-- ATTENZIONE: le operazioni di movimento della telecamera sono visualizzate con un ritardo di alcuni secondi, per l'iniziale bufferizzazione dei dati effettuata dal player. -->
+<H3>
+<P>
+<CENTER>
+
+<TABLE>
+<TR>
+<TD>
+<EMBED SRC="stream.sdp" WIDTH="420" HEIGHT="315" AUTOPLAY="true" CONTROLLER="true" TYPE="application/sdp" SCALE="TOFIT" BGCOLOR="000000">
+</EMBED>
+<applet code=Encrypt.class archive=Encrypt.zip  width=50 height=50 >
+	<param name=background value="000000">
+	<param name=foreground value="FFFF00">
+  </applet>
+</TD>
+<TD WIDTH=20></TD>
+<TD>
+<FORM NAME="movement" ACTION="cgi-bin/movecam" METHOD="POST">
+<TABLE>
+<TR>
+<TD>
+</TD>
+<TD ALIGN="center">
+<BR><INPUT TYPE="IMAGE" SRC="up.gif" NAME="up" ALT="Su" ALIGN="center" BORDER=0> 
+</TD>
+<TD>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="center">
+&nbsp&nbsp <INPUT TYPE="IMAGE" SRC="left.gif" NAME="left" ALT="Sinistra" ALIGN="center" BORDER=0> 
+</TD>
+<TD>
+</TD>
+<TD ALIGN="center">
+<INPUT TYPE="IMAGE" SRC="right.gif" NAME="right" ALT="Destra" ALIGN="center" BORDER=0>  &nbsp&nbsp
+</TD>
+</TR>
+<TR>
+<TD>
+</TD>
+<TD ALIGN="center">
+<H3><INPUT TYPE="IMAGE" SRC="down.gif" NAME="down" ALT="Giu'" ALIGN="center" BORDER=0> </H3>
+</TD>
+<TD>
+<H3>&nbsp&nbsp </H3>
+</TD>
+</TR>
+<TR>
+<TD>
+&nbsp&nbsp <INPUT TYPE="IMAGE" SRC="minus.gif" NAME="minus" ALT="Minus" ALIGN="center" BORDER=0> 
+</TD>
+<TD WIDTH=30>
+</TD>
+<TD>
+<INPUT TYPE="IMAGE" SRC="plus.gif" NAME="plus" ALT="Plus" ALIGN="center" BORDER=0> &nbsp&nbsp
+</TD>
+</TR>
+</TABLE>
+</FORM>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+<H3>V.inngang<!-- V. Input --><BR>
+<TABLE BORDERCOLOR=white BORDER=1 CELLSPACING=0 CELPADDING=0>
+<TR>
+<TD>
+<TABLE>
+<TR>
+<TD><BR>
+    <FORM ACTION="cgi-bin/actstream" METHOD="POST">
+    <H2><INPUT CLASS="audbuttwidth" TYPE="SUBMIT" VALUE="Lokal" > <!-- Locale -->
+    <INPUT TYPE="HIDDEN" NAME="type" VALUE="1"> </H2>
+    </FORM>
+</TD>
+<TD WIDTH=20></TD>
+<TD><BR>
+    <FORM ACTION="cgi-bin/actstream" METHOD="POST">
+    <H2><INPUT CLASS="audbuttwidth" TYPE="SUBMIT" VALUE="Automatisk" > <!-- Automatico -->
+    <INPUT TYPE="HIDDEN" NAME="type" VALUE="3"> </H2>
+    </FORM>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+<TD></TD>
+<TD></TD>
+</TABLE>
+
+<P>
+
+</H3>
+</CENTER>
+If the stream is not visible there can be one of these causes:<!-- Se non si riesce a visualizzare il filmato le cause potrebbero essere le seguenti: -->
+<BR>*) the QuickTime player is not installed or the version used is not corrected<!-- non e' stato installato QuickTime o non si ha una corretta versione del player -->
+<BR>*) you are not enabled to receive the streams<!-- non si e' abilitati alla ricezione degli streams -->
+<BR>*) unicast streams are actually transmitted to another user<!-- lo streaming unicast e' attualmente inviato ad un altro utente -->
+<BR>*) during the connection the DualVideo has been activated<!-- durante la connessione e' stato attivato il dual-video -->
+<BR>*) during the connection the encrytpion has been activated<!-- durante la connessione e' stata attivata la modalita'encryption. -->
+<BR>
+</H3>
+
+<CENTER>
+<A HREF="http://www.apple.com/quicktime/download/"><IMG SRC="quick.gif" BORDER=0></A>
+</CENTER>
+
+<HR COLOR=F4941C >
+<P>
+<A HREF="home.asp"><IMG SRC="home.jpg" BORDER=0 NAME="Home" ALT="Home"></A>
+</BODY> 
+</HTML>

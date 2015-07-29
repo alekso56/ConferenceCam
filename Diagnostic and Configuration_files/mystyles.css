@@ -1,0 +1,99 @@
+
+.textyellow {color : #FFFF00}
+.textgray {color : #C0C0C0}
+.textred {color : #FF0000}
+.buttwidth {width : 180}
+.audbuttwidth {width : 90}
+.hide {display : none}
+.border {BORDER:thin solid red}
+.smalltext {font-size:12pt}
+.textuser {
+            font-family: Verdana;
+            text-decoration: none;
+            font-size: 12;
+            color : #FFFF00}
+          }
+.textsmall {
+            font-family: Verdana;
+            text-decoration: none;
+            font-size:8pt;
+            color : #FFFF00}
+          }          
+
+A:HOVER {
+		font-family: Verdana;
+		text-decoration: none;
+		color: #FFFF00;
+}
+
+A {
+		font-family: Verdana;
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+H1,H2,H3,H4,H5,H6 {
+
+font-family: Verdana;
+color: F4941C;
+
+}
+
+H1{
+
+font-size: 18;
+
+}
+
+H2{
+
+font-size: 16;
+
+}
+
+H3{
+
+font-size: 14;
+
+}
+
+H4{
+
+font-size: 12;
+
+}
+
+H5{
+
+font-size: 10;
+
+}
+
+H6{
+
+font-size: 8;
+
+}
+
+
+input.lightblue
+{
+	margin: 10px;
+	background-color: #056186; 
+	color: white;
+    font-family: Arial;
+	font-weight: bold; 
+	font-size: 24px; 
+	border:outset 3px #056186
+}
+
+input.orange
+{
+	margin: 10px;
+	background-color: #808080; 
+	color: #F4941C;
+  font-family: Verdana;
+	font-weight: bold; 
+	font-size: 24px; 
+	border:outset 3px #808080
+}
